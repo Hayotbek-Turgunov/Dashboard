@@ -1,0 +1,56 @@
+aside {
+  height: 100vh;
+  background-color: #fff;
+  width: 310px;
+  z-index: 12;
+  overflow: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .logo {
+    font-size: 32px;
+    display: block;
+    margin-left: 30px;
+    margin-top: 37px;
+
+    & img {
+      width: 150px;
+      height: 39px;
+    }
+  }
+
+  .list {
+    padding: 12px;
+    list-style: none;
+    margin: 0;
+    margin: 25px 10px;
+
+    &-item {
+      color: #fff;
+      transition: background-color 0.3s ease;
+      margin-bottom: 10px;
+
+      &-link {
+        padding: 10px;
+        text-decoration: none;
+        color: #9197b3;
+        border-radius: 12px;
+        display: block;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .icon {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .router-link-exact-active {
+    background-color: #5932ea;
+    color: white;
+  }
+}

@@ -1,0 +1,19 @@
+main {
+  display: flex;
+}
+
+.routing {
+  background-color: rgba(214, 230, 253, 0.586);
+  padding-left: 30px;
+  padding-right: 30px;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  // border-radius: 30px;
+
+  flex: 1;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+  /* border: 2px solid blue; */
+}

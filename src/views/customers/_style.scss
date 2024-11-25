@@ -1,0 +1,187 @@
+.customer {
+  width: 100%;
+  height: 812px;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 30px;
+  margin-bottom: 100px;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &-text h2 {
+      font-family: Poppins;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 33px;
+      letter-spacing: -0.01em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin-bottom: 7px;
+    }
+
+    &-text p {
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #16c098;
+    }
+
+    &-search form {
+      display: flex;
+      gap: 16px;
+
+      & input {
+        width: 216px;
+        height: 38px;
+        border-radius: 10px;
+        text-indent: 40px;
+        border: none;
+        outline: none;
+        background-color: #f9fbff;
+      }
+
+      .sort-dropdown {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: #5a5a5a;
+        background-color: #f9fbff;
+        width: 216px;
+        height: 38px;
+        padding-left: 20px;
+        border-radius: 10px;
+      }
+
+      label {
+        margin-right: 10px;
+      }
+
+      select {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .customer-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .customer-table th,
+  .customer-table td {
+    padding: 18px 16px;
+    text-align: left;
+    border-bottom: 1px solid #f4f4f4;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .customer-table th {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #b5b7c0;
+  }
+
+  .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+  }
+  .status-active {
+    color: #008767;
+    width: 80px;
+    height: 30px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #16c09861;
+    border-radius: 4px;
+  }
+  .status-inactive {
+    color: #df0404;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc5c5;
+  }
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .page-button {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    margin: 0 2px;
+    border-radius: 4px;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .page-button:hover {
+    background-color: #f0f0f0;
+  }
+
+  .customer-table-footer {
+    display: flex;
+    justify-content: space-between;
+
+    & p {
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #b5b7c0;
+    }
+
+    .table-footer-buttons {
+      display: flex;
+      gap: 12px;
+
+      button {
+        width: 26px;
+        height: 26px;
+        border: none;
+        background-color: #f5f5f5;
+      }
+    }
+  }
+}
