@@ -11,12 +11,31 @@
         </router-link>
       </li>
     </ul>
+
+    <div class="aside-item">
+      <h3>Upgrade to PRO to get access all Features!</h3>
+      <div class="aside-item-btn">
+        <button>Get Pro Now!</button>
+      </div>
+    </div>
+
+    <div class="aside-profile">
+      <div class="profile-image">
+        <img :src="profileImg" alt="" />
+      </div>
+      <div class="profile-info">
+        <h3>Evano</h3>
+        <p>Project Manager</p>
+      </div>
+    </div>
   </aside>
 </template>
 
 <script setup>
 import { navLinks } from '../../constants/index.js'
 import navigationLogo from '../../assets/navigation-logo.svg'
+
+import profileImg from '../../assets/Profile-img.svg'
 </script>
 
 <style lang="scss" scoped src="./_style.scss"></style>
